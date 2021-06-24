@@ -1,0 +1,282 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  width: 1171px;
+  margin: 0 auto;
+}
+
+.header {
+  background: rgba(77,189,253,1);
+  background: -moz-linear-gradient(-45deg, rgba(77,189,253,1) 0%, rgba(55,144,217,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(77,189,253,1)), color-stop(100%, rgba(55,144,217,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(77,189,253,1) 0%, rgba(55,144,217,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(77,189,253,1) 0%, rgba(55,144,217,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(77,189,253,1) 0%, rgba(55,144,217,1) 100%);
+  background: linear-gradient(135deg, rgba(77,189,253,1) 0%, rgba(55,144,217,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dbdfd', endColorstr='#3790d9', GradientType=1 );
+  padding-top: 61px;
+  padding-bottom: 145px;
+  color: white;
+}
+p {
+  line-height: 1.7em;
+}
+
+.title span {
+  font-size: 59px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offer {
+  width: 564px;
+}
+
+.title {
+  font-size: 37px;
+  width: 565px;
+}
+
+.intro {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  width: 400px;
+  margin-top: 47px;
+  margin-bottom: 47px;
+  color: white;
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  background: #ffd429;
+  color: #2e2a1b;
+  display: block;
+  width: 222px;
+  padding: 18px 0;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background: #e4bc1c;
+}
+
+/*.desktop {
+  margin-top: 40px;
+}*/
+
+.learn, .mail {
+  padding-top: 107px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 66px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+
+.skill {
+  width: 300px;
+  background: url('../img/icon1.jpg') no-repeat top;
+  padding-top: 80px;
+}
+
+.skill-title {
+  font-size: 19px;
+}
+
+.skill-text {
+  margin: 8px;
+}
+
+.skill2 {
+  background: url('../img/icon2.jpg') no-repeat top;
+}
+
+.skill3 {
+  background: url('../img/icon3.jpg') no-repeat top;
+}
+
+.mail {
+  background: #ecf3f8;
+  padding-top: 103px;
+  padding-bottom: 103px;
+}
+
+.input {
+  width: 340px;
+  border: 1px solid #bbbbbb;
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  height: 45px;
+  padding-left: 25px;
+}
+
+.btn-form {
+  border: 0;
+  cursor: pointer;
+  width: 340px;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+form input, button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  background: #164d7a;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.intro2 {
+  display: block;
+  /*text-align: center;*/
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.inp {
+  margin-bottom: 15px;
+}
+
+.inp1 {
+  margin-bottom: 15px;
+}
+
+.inp2 {
+  margin-bottom: 15px;
+}
+
+
+/*1200 - 1400*/
+@media screen and (max-width: 1400px) {
+   .container {
+    width: 1140px;
+   }
+   .desktop {
+    width: 100%;
+   }
+}
+
+/*992 - 1200*/
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+  .wrapper {
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: -100px;
+  }
+  .offer {
+    width: 100%
+  }
+  .intro {
+    width: auto;
+  }
+
+.title {
+  width: 100%;
+}
+.intro2 {
+  text-align: center;
+}
+
+}
+
+/*768 - 992*/
+@media screen and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+}
+
+/*576 - 768*/
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  .desktop {
+    width: 100%;
+  }
+  .btn-form2 {
+    width: auto;
+  }
+
+
+/*0 - 576*/
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  .input {
+    width: 100%;
+  }
+  .btn-form {
+    width: 100%;
+  }
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skill {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
